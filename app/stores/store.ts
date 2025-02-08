@@ -143,6 +143,13 @@ class Store {
     return this.cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
   }
 
+  get discountTotal() {
+    return this.cart.reduce((sum, item) => {
+      const itemDiscount = item.discount || 0;
+      return sum + (item.price * item.quantity * itemDiscount) / 100;
+    }, 0);
+  }
+
   getItemQuantity = (productId: string): number => {
     const item = this.cart.find(it => it.id === productId);
     return item ? item.quantity : 0;

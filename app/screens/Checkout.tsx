@@ -22,7 +22,7 @@ import MyHeader from '../components/AppHeader.tsx';
 const emptyIcon = require('../assets/empty.png');
 const Checkout = ({navigation}: any) => {
   const {productStore} = useStore();
-  const {cart, cartTotal, clearCart} = productStore;
+  const {cart, cartTotal, clearCart, discountTotal} = productStore;
   const isEmpty = cart.length === 0;
 
   useEffect(() => {
@@ -71,14 +71,14 @@ const Checkout = ({navigation}: any) => {
               </View>
               <View style={styles.footer}>
                 <Text style={styles.footerText}>Discount</Text>
-                <Text style={styles.footerText}>${cartTotal}</Text>
+                <Text style={styles.footerText}>${discountTotal}</Text>
               </View>
               <View style={styles.footer}>
                 <Text style={[styles.footerText, {color: COLORS.primary}]}>
                   Total
                 </Text>
                 <Text style={[styles.footerText, {color: COLORS.primary}]}>
-                  ${cartTotal}
+                  ${cartTotal - discountTotal}
                 </Text>
               </View>
             </>
