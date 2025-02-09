@@ -12,7 +12,7 @@ export const products: Product[] = [
     category: 'Pizza',
     description:
       'Classic pizza with fresh tomato sauce, mozzarella, and basil.',
-    discount: 10,
+    discount: 1.5,
   },
   {
     id: '2',
@@ -24,7 +24,7 @@ export const products: Product[] = [
     category: 'Pizza',
     description:
       'Crispy pizza topped with spicy pepperoni and mozzarella cheese.',
-    discount: 15,
+    discount: 2.0,
   },
   {
     id: '3',
@@ -35,7 +35,7 @@ export const products: Product[] = [
     weight: '500 g',
     category: 'Pizza',
     description: 'Pizza with grilled chicken, BBQ sauce, and red onions.',
-    discount: 12,
+    discount: 1.5,
   },
   {
     id: '4',
@@ -46,7 +46,7 @@ export const products: Product[] = [
     weight: '450 g',
     category: 'Pizza',
     description: 'Loaded with bell peppers, olives, onions, and mushrooms.',
-    discount: 8,
+    discount: 2.0,
   },
   {
     id: '5',
@@ -57,7 +57,7 @@ export const products: Product[] = [
     weight: '500 g',
     category: 'Pizza',
     description: 'Pizza with ham, pineapple, and mozzarella cheese.',
-    discount: 10,
+    discount: 1.5,
   },
   {
     id: '6',
@@ -68,7 +68,7 @@ export const products: Product[] = [
     weight: '550 g',
     category: 'Pizza',
     description: 'A pizza topped with pepperoni, sausage, ham, and bacon.',
-    discount: 20,
+    discount: 2.5,
   },
 
   // Burger
@@ -81,7 +81,7 @@ export const products: Product[] = [
     weight: '300 g',
     category: 'Burger',
     description: 'Juicy beef patty with cheddar cheese, lettuce, and tomato.',
-    discount: 5,
+    discount: 1.0,
   },
   {
     id: '8',
@@ -92,7 +92,7 @@ export const products: Product[] = [
     weight: '350 g',
     category: 'Burger',
     description: 'A cheeseburger topped with crispy bacon slices.',
-    discount: 10,
+    discount: 1.5,
   },
   {
     id: '9',
@@ -103,7 +103,7 @@ export const products: Product[] = [
     weight: '300 g',
     category: 'Burger',
     description: 'A patty made of vegetables, served with lettuce and avocado.',
-    discount: 5,
+    discount: 2.0,
   },
   {
     id: '10',
@@ -114,7 +114,7 @@ export const products: Product[] = [
     weight: '350 g',
     category: 'Burger',
     description: 'Beef patty with BBQ sauce, onions, and pickles.',
-    discount: 12,
+    discount: 1.0,
   },
   {
     id: '11',
@@ -125,7 +125,7 @@ export const products: Product[] = [
     weight: '350 g',
     category: 'Burger',
     description: 'Beef patty with sautéed mushrooms and Swiss cheese.',
-    discount: 8,
+    discount: 2.0,
   },
   {
     id: '12',
@@ -136,7 +136,143 @@ export const products: Product[] = [
     weight: '400 g',
     category: 'Burger',
     description: 'Double beef patties with cheddar cheese and special sauce.',
-    discount: 15,
+    discount: 2.5,
+  },
+
+  // Appetizers
+  {
+    id: '13',
+    name: 'Mozzarella Sticks',
+    image:
+      'https://avatars.mds.yandex.net/i?id=4e57e1fa29d05186bc0db7951bc8aace7b8e0e0a-10843465-images-thumbs&n=13',
+    price: 8.0,
+    weight: '200 g',
+    category: 'Appetizers',
+    description: 'Crispy fried mozzarella sticks with marinara sauce.',
+    discount: 1.5,
+  },
+  {
+    id: '14',
+    name: 'Chicken Wings',
+    image:
+      'https://i.pinimg.com/736x/44/1d/79/441d79239b576b0ecb0b91d194faae64.jpg',
+    price: 12.0,
+    weight: '300 g',
+    category: 'Appetizers',
+    description: 'Spicy buffalo chicken wings served with ranch dressing.',
+    discount: 1.0,
+  },
+  {
+    id: '15',
+    name: 'Garlic Bread',
+    image:
+      'https://avatars.mds.yandex.net/i?id=5657dc1513ea6dd880f2f5e953fd898a_l-5340698-images-thumbs&n=13',
+    price: 6.0,
+    weight: '150 g',
+    category: 'Appetizers',
+    description: 'Toasted bread with garlic butter and parsley.',
+    discount: 0.5,
+  },
+  {
+    id: '16',
+    name: 'Loaded Nachos',
+    image:
+      'https://i.pinimg.com/originals/c8/95/63/c895630af9df875ab228bdc9239ac096.jpg',
+    price: 10.0,
+    weight: '250 g',
+    category: 'Appetizers',
+    description: 'Tortilla chips loaded with cheese, jalapenos, and salsa.',
+    discount: 1.5,
+  },
+  {
+    id: '17',
+    name: 'Stuffed Jalapenos',
+    image:
+      'https://avatars.mds.yandex.net/i?id=63c223420fb36e0de7dffb45e76a5360a4435b0a-8186099-images-thumbs&n=13',
+    price: 9.0,
+    weight: '200 g',
+    category: 'Appetizers',
+    description: 'Jalapenos stuffed with cheese and deep-fried.',
+    discount: 1.0,
+  },
+  {
+    id: '18',
+    name: 'Potato Wedges',
+    image:
+      'https://avatars.mds.yandex.net/i?id=cad6befc359115ef5d0ded9715e2a5c3587a593c-5209846-images-thumbs&n=13',
+    price: 7.0,
+    weight: '250 g',
+    category: 'Appetizers',
+    description: 'Crispy potato wedges seasoned with herbs.',
+    discount: 0.5,
+  },
+
+  // Salad
+  {
+    id: '19',
+    name: 'Caesar Salad',
+    image:
+      'https://avatars.mds.yandex.net/i?id=d2908c051e79eb32e1917fadbfdf0a2804da6ba1-12753086-images-thumbs&n=13',
+    price: 10.0,
+    weight: '300 g',
+    category: 'Salad',
+    description: 'Crisp romaine lettuce, croutons, and Caesar dressing.',
+    discount: 1.0,
+  },
+  {
+    id: '20',
+    name: 'Greek Salad',
+    image:
+      'https://avatars.mds.yandex.net/i?id=1dadf2704deb46fee1f070ba52ee2ad8888177b4-8497330-images-thumbs&n=13',
+    price: 9.0,
+    weight: '250 g',
+    category: 'Salad',
+    description: 'Fresh vegetables with feta cheese and olives.',
+    discount: 0.5,
+  },
+  {
+    id: '21',
+    name: 'Caprese Salad',
+    image:
+      'https://i.pinimg.com/736x/b6/9c/98/b69c98a8db5ff11c45fb3ee963d59b34.jpg',
+    price: 8.5,
+    weight: '200 g',
+    category: 'Salad',
+    description: 'Tomatoes, mozzarella, and basil drizzled with balsamic.',
+    discount: 1.5,
+  },
+  {
+    id: '22',
+    name: 'Quinoa Salad',
+    image:
+      'https://avatars.mds.yandex.net/i?id=e99c43e9a99a67fc0770857f2eb4d9fc-5433531-images-thumbs&n=13',
+    price: 11.0,
+    weight: '250 g',
+    category: 'Salad',
+    description: 'Quinoa with fresh vegetables and lemon dressing.',
+    discount: 1.0,
+  },
+  {
+    id: '23',
+    name: 'Spinach Avocado Salad',
+    image:
+      'https://avatars.mds.yandex.net/i?id=7512bee7c31bad6fce1a3b43e520f52e_l-10986596-images-thumbs&n=13',
+    price: 12.0,
+    weight: '300 g',
+    category: 'Salad',
+    description: 'Spinach and avocado with nuts and vinaigrette.',
+    discount: 2.0,
+  },
+  {
+    id: '24',
+    name: 'Asian Slaw',
+    image:
+      'https://avatars.mds.yandex.net/i?id=33f4a95253535961768e01f1804e15e5df382eda-4438551-images-thumbs&n=13',
+    price: 10.0,
+    weight: '250 g',
+    category: 'Salad',
+    description: 'Crispy slaw with sesame ginger dressing.',
+    discount: 1.5,
   },
 ];
 
